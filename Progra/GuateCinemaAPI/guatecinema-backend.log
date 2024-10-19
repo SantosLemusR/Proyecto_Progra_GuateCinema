@@ -1,0 +1,67 @@
+2024-10-19 07:45:35.839  INFO 4284 --- [main] o.e.g.GuateCinemaApiApplication          : Starting GuateCinemaApiApplication using Java 11.0.24 on Fer with PID 4284 (C:\Users\Fjfer\Documents\Progra\GuateCinemaAPI\build\classes\java\main started by Fjfer in C:\Users\Fjfer\Documents\Progra\GuateCinemaAPI)
+2024-10-19 07:45:35.849  INFO 4284 --- [main] o.e.g.GuateCinemaApiApplication          : No active profile set, falling back to default profiles: default
+2024-10-19 07:45:38.273  INFO 4284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19 07:45:38.489  INFO 4284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 14 JPA repository interfaces.
+2024-10-19 07:45:39.510  INFO 4284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-10-19 07:45:39.529  INFO 4284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19 07:45:39.530  INFO 4284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2024-10-19 07:45:39.692  INFO 4284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19 07:45:39.693  INFO 4284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3765 ms
+2024-10-19 07:45:40.522  INFO 4284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19 07:45:41.294  INFO 4284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19 07:45:44.099  INFO 4284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19 07:45:45.551  INFO 4284 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@750b200b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c65f2e1, org.springframework.security.web.header.HeaderWriterFilter@3182143c, org.springframework.security.web.authentication.logout.LogoutFilter@19bbb216, org.example.guatecinemaapi.config.JwtTokenFilter@55c581e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78f1d29, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35e3f3b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eaa07bb, org.springframework.security.web.session.SessionManagementFilter@531b1778, org.springframework.security.web.access.ExceptionTranslationFilter@1299c874, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48928b57]
+2024-10-19 07:45:45.626  WARN 4284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19 07:45:46.192  INFO 4284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-19 07:45:46.209  INFO 4284 --- [main] o.e.g.GuateCinemaApiApplication          : Started GuateCinemaApiApplication in 11.26 seconds (JVM running for 14.188)
+2024-10-19 07:47:21.695  INFO 4284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19 07:47:21.697  INFO 4284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19 07:47:21.700  INFO 4284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-10-19 08:10:57.431  INFO 4284 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19 08:10:57.443  INFO 4284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19 08:10:57.517  INFO 4284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19 08:11:03.932  INFO 25964 --- [main] o.e.g.GuateCinemaApiApplication          : Starting GuateCinemaApiApplication using Java 11.0.24 on Fer with PID 25964 (C:\Users\Fjfer\Documents\Progra\GuateCinemaAPI\build\classes\java\main started by Fjfer in C:\Users\Fjfer\Documents\Progra\GuateCinemaAPI)
+2024-10-19 08:11:03.937  INFO 25964 --- [main] o.e.g.GuateCinemaApiApplication          : No active profile set, falling back to default profiles: default
+2024-10-19 08:11:05.567  INFO 25964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19 08:11:05.732  INFO 25964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 14 JPA repository interfaces.
+2024-10-19 08:11:06.559  INFO 25964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-10-19 08:11:06.577  INFO 25964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19 08:11:06.577  INFO 25964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2024-10-19 08:11:06.751  INFO 25964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19 08:11:06.752  INFO 25964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2752 ms
+2024-10-19 08:11:07.508  INFO 25964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19 08:11:08.036  INFO 25964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19 08:11:10.013  INFO 25964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19 08:11:11.245  INFO 25964 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f629aa4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2adce412, org.springframework.security.web.header.HeaderWriterFilter@71ac5723, org.springframework.security.web.authentication.logout.LogoutFilter@6778636f, org.example.guatecinemaapi.config.JwtTokenFilter@3f12676, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d84ab90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3113595e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f348e10, org.springframework.security.web.session.SessionManagementFilter@7bbe852a, org.springframework.security.web.access.ExceptionTranslationFilter@67aaf882, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56ed2baf]
+2024-10-19 08:11:11.323  WARN 25964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19 08:11:11.863  INFO 25964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-19 08:11:11.881  INFO 25964 --- [main] o.e.g.GuateCinemaApiApplication          : Started GuateCinemaApiApplication in 8.541 seconds (JVM running for 9.937)
+2024-10-19 08:11:25.941  INFO 25964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19 08:11:25.943  INFO 25964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19 08:11:25.947  INFO 25964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-10-19 10:07:22.190  INFO 25964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19 10:07:22.238  INFO 25964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19 10:07:22.305  INFO 25964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19 10:15:21.726  INFO 8860 --- [main] o.e.g.GuateCinemaApiApplication          : Starting GuateCinemaApiApplication using Java 11.0.24 on Fer with PID 8860 (C:\Users\Fjfer\Documents\Progra\GuateCinemaAPI\build\classes\java\main started by Fjfer in C:\Users\Fjfer\Documents\Progra\GuateCinemaAPI)
+2024-10-19 10:15:21.730  INFO 8860 --- [main] o.e.g.GuateCinemaApiApplication          : No active profile set, falling back to default profiles: default
+2024-10-19 10:15:22.705  INFO 8860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19 10:15:22.826  INFO 8860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 14 JPA repository interfaces.
+2024-10-19 10:15:23.475  INFO 8860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-10-19 10:15:23.489  INFO 8860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19 10:15:23.489  INFO 8860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2024-10-19 10:15:23.620  INFO 8860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19 10:15:23.621  INFO 8860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1829 ms
+2024-10-19 10:15:24.242  INFO 8860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19 10:15:24.816  INFO 8860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19 10:15:26.825  INFO 8860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19 10:15:27.864  INFO 8860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@752180c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@47c422d3, org.springframework.security.web.header.HeaderWriterFilter@7e0941cc, org.springframework.security.web.authentication.logout.LogoutFilter@6efc9d3f, org.example.guatecinemaapi.config.JwtTokenFilter@13346a64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c468360, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e489957, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1802f60c, org.springframework.security.web.session.SessionManagementFilter@30a6984c, org.springframework.security.web.access.ExceptionTranslationFilter@4e553d60, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e03bb74]
+2024-10-19 10:15:27.931  WARN 8860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19 10:15:28.466  INFO 8860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-19 10:15:28.477  INFO 8860 --- [main] o.e.g.GuateCinemaApiApplication          : Started GuateCinemaApiApplication in 7.424 seconds (JVM running for 8.591)
+2024-10-19 10:38:14.718  INFO 8860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19 10:38:14.720  INFO 8860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19 10:38:14.722  INFO 8860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-19 11:36:57.408  WARN 8860 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s55ms200µs700ns).
+2024-10-19 11:57:36.756  INFO 8860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19 11:57:36.810  INFO 8860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19 11:57:36.865  INFO 8860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

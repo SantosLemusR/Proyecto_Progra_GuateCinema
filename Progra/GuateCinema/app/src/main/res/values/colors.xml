@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Colores principales del tema -->
+    <color name="colorPrimary">#4997D0</color> <!-- Azul claro -->
+    <color name="colorPrimaryDark">#003366</color> <!-- Azul oscuro -->
+    <color name="colorAccent">#FFFFFF</color> <!-- Blanco -->
+
+    <!-- Colores de fondo y texto -->
+    <color name="colorBackground">#FFFFFF</color> <!-- Fondo blanco -->
+    <color name="colorTextPrimary">#003366</color> <!-- Texto principal azul oscuro -->
+    <color name="colorTextSecondary">#4B4B4B</color> <!-- Texto secundario gris oscuro -->
+    <color name="gray">#808080</color> <!-- Gris para textos u otros elementos -->
+
+    <!-- Colores para formularios -->
+    <color name="email_color">#000000</color> <!-- Color para el campo de correo (Negro) -->
+    <color name="password_color">#33C1FF</color> <!-- Color para el campo de contraseña (Azul claro) -->
+    <color name="hint_color">#808080</color> <!-- Color de las pistas (gris) -->
+    <color name="text_color">#000000</color> <!-- Color del texto en los campos -->
+    <color name="background_color">#FFFFFF</color> <!-- Color de fondo para los campos -->
+
+    <!-- Colores para botones y elementos de interfaz -->
+    <color name="colorButton">#4997D0</color> <!-- Color azul claro para botones -->
+    <color name="colorButtonText">#FFFFFF</color> <!-- Texto de botones en blanco -->
+    <color name="colorError">#FF0000</color> <!-- Rojo para mensajes de error -->
+    <color name="colorCardBackground">#E0E0E0</color> <!-- Fondo gris claro para tarjetas -->
+
+    <!-- Colores para los asientos -->
+    <color name="seat_selected_color">#FFEB3B</color> <!-- Amarillo para asiento seleccionado -->
+    <color name="colorPressed">#FF5722</color> <!-- Naranja para asiento presionado -->
+    <color name="colorReserved">#9E9E9E</color> <!-- Gris para asiento reservado -->
+    <color name="seat_default_color">#2196F3</color> <!-- Azul para asientos disponibles -->
+    <color name="colorAvailable">#4CAF50</color> <!-- Verde para asientos disponibles -->
+
+    <!-- Definir el color negro -->
+    <color name="black">#000000</color> <!-- Esto añade el color negro -->
+
+    <!-- Colores para iconos del launcher -->
+    <color name="ic_launcher_background">#FFFFFF</color> <!-- Blanco para el fondo del icono del launcher -->
+</resources>

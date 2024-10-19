@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "715409251904",
+    "project_id": "guatecinema-d63ba",
+    "storage_bucket": "guatecinema-d63ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715409251904:android:7711424632d98b356889a5",
+        "android_client_info": {
+          "package_name": "com.miproyecto.guatecinema"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBmzW4dQhyMYVLovZEUv7-oQvLhx7tR6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

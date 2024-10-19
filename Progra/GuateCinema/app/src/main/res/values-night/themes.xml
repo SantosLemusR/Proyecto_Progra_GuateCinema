@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema GuateCinema -->
+    <style name="Theme.GuateCinema.Dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Fondo y texto -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+        <!-- Estilo del botón personalizado -->
+        <item name="buttonStyle">@style/Widget.Button.CustomButton.Dark</item>
+
+        <!-- Barra de estado y navegación -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Estilo personalizado del botón en modo oscuro -->
+    <style name="Widget.Button.CustomButton.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorButtonDark</item> <!-- Fondo oscuro del botón -->
+        <item name="android:textColor">@color/colorButtonText</item> <!-- Texto blanco en el botón -->
+        <item name="android:elevation">6dp</item> <!-- Sombra para darle profundidad -->
+        <item name="cornerRadius">12dp</item> <!-- Bordes redondeados para botones -->
+    </style>
+</resources>

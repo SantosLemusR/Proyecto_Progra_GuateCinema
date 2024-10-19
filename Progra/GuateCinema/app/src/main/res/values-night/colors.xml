@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Colores principales del tema oscuro -->
+    <color name="colorPrimary">#003366</color> <!-- Azul oscuro para mejor contraste en modo nocturno -->
+    <color name="colorPrimaryDark">#001F33</color> <!-- Azul aún más oscuro para barras de estado o navegación -->
+    <color name="colorAccent">#FFFFFF</color> <!-- Blanco para mantener el contraste en elementos destacados -->
+
+    <!-- Colores de fondo y texto -->
+    <color name="colorBackground">#121212</color> <!-- Fondo oscuro para el modo nocturno -->
+    <color name="colorTextPrimary">#FFFFFF</color> <!-- Texto principal en blanco para mejor visibilidad -->
+    <color name="colorTextSecondary">#B3B3B3</color> <!-- Texto secundario en gris claro para menor protagonismo -->
+    <color name="gray">#A0A0A0</color> <!-- Gris más claro para mayor legibilidad en modo nocturno -->
+
+    <!-- Colores para botones en tema oscuro -->
+    <color name="colorButtonDark">#1E88E5</color> <!-- Azul claro para los botones en tema oscuro -->
+    <color name="colorButtonText">#FFFFFF</color> <!-- Texto blanco en los botones -->
+
+    <!-- Colores para formularios -->
+    <color name="email_color">#E0E0E0</color> <!-- Texto del campo de correo en gris claro para contraste -->
+    <color name="password_color">#33C1FF</color> <!-- Azul claro para el campo de contraseña -->
+    <color name="hint_color">#757575</color> <!-- Gris oscuro para las pistas (placeholders) -->
+    <color name="text_color">#FFFFFF</color> <!-- Texto en blanco para los campos de entrada -->
+    <color name="background_color">#1E1E1E</color> <!-- Fondo oscuro para los campos de entrada -->
+
+    <!-- Otros colores para la interfaz -->
+    <color name="colorError">#FF6B6B</color> <!-- Rojo claro para errores, menos agresivo en modo oscuro -->
+    <color name="colorCardBackground">#2A2A2A</color> <!-- Fondo oscuro para tarjetas -->
+</resources>

@@ -1,0 +1,207 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendedorActivity"
+    android:background="@color/background_color">
+
+    <!-- AppBar con título y menú -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Panel Vendedor"
+            android:textColor="@color/colorTextPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Contenido con ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Sección de Verificación de Boletos -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:backgroundTint="@color/colorCardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Título desplegable -->
+                    <TextView
+                        android:id="@+id/titleVerificarBoletos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verificación de Boletos"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="@color/colorTextPrimary"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Opciones que se expanden/colapsan -->
+                    <LinearLayout
+                        android:id="@+id/expandableVerificarBoletos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!-- Botón para escanear QR -->
+                        <Button
+                            android:id="@+id/btnScanQR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Escanear QR"
+                            style="?attr/buttonStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sección de Gestión de Reservas -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:backgroundTint="@color/colorCardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Título desplegable -->
+                    <TextView
+                        android:id="@+id/titleGestionReservas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gestión de Reservas"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="@color/colorTextPrimary"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Opciones que se expanden/colapsan -->
+                    <LinearLayout
+                        android:id="@+id/expandableGestionReservas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!-- Botones para manejar reservas -->
+                        <Button
+                            android:id="@+id/btnVerReservas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ver Reservas"
+                            style="?attr/buttonStyle" />
+
+                        <Button
+                            android:id="@+id/btnCancelarReservas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cancelar Reservas"
+                            android:layout_marginTop="8dp"
+                            style="?attr/buttonStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sección de Atención al Cliente -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:backgroundTint="@color/colorCardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Título desplegable -->
+                    <TextView
+                        android:id="@+id/titleAtencionCliente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atención al Cliente"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="@color/colorTextPrimary"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <!-- Opciones que se expanden/colapsan -->
+                    <LinearLayout
+                        android:id="@+id/expandableAtencionCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!-- Botones para atención al cliente -->
+                        <Button
+                            android:id="@+id/btnAtencionPreguntas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Preguntas Frecuentes"
+                            style="?attr/buttonStyle" />
+
+                        <Button
+                            android:id="@+id/btnAtencionSugerencias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Enviar Sugerencias"
+                            android:layout_marginTop="8dp"
+                            style="?attr/buttonStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botón de Cerrar Sesión -->
+            <Button
+                android:id="@+id/btnCerrarSesionVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión"
+                android:layout_marginTop="16dp"
+                style="?attr/buttonStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

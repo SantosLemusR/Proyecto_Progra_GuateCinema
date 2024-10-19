@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la película con mayor tamaño de texto -->
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título de la película"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary" /> <!-- Color definido por el tema -->
+
+    <!-- Género de la película -->
+    <TextView
+        android:id="@+id/generoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Género"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary" /> <!-- Color definido por el tema -->
+
+    <!-- Clasificación de la película -->
+    <TextView
+        android:id="@+id/clasificacionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clasificación"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary" /> <!-- Color definido por el tema -->
+
+    <!-- Sinopsis de la película -->
+    <TextView
+        android:id="@+id/sinopsisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinopsis"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
+    <!-- Hora de la película -->
+    <TextView
+        android:id="@+id/horaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary" /> <!-- Color definido por el tema -->
+
+    <!-- Sala de la película -->
+    <TextView
+        android:id="@+id/salaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary" /> <!-- Color definido por el tema -->
+
+    <!-- Reparto de la película -->
+    <TextView
+        android:id="@+id/repartoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reparto"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary" /> <!-- Color definido por el tema -->
+
+    <!-- Póster de la película -->
+    <ImageView
+        android:id="@+id/posterImageView"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="Póster de la película"
+        android:layout_marginTop="8dp" />
+
+    <!-- Elimina el botón de trailer -->
+</LinearLayout>

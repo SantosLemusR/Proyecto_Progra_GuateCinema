@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+    <Button android:id="@+id/btnVerUsuarios" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ver Usuarios"/>
+    <Button android:id="@+id/btnEditarRoles" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Editar Roles" android:layout_marginTop="8dp"/>
+    <Button android:id="@+id/btnEliminarUsuarios" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eliminar Usuarios" android:layout_marginTop="8dp"/>
+</LinearLayout>

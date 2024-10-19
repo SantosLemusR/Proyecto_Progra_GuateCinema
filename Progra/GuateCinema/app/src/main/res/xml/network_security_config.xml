@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Configuración global para permitir tráfico HTTP para todos los dominios -->
+    <base-config cleartextTrafficPermitted="true" />
+
+    <!-- O puedes configurar dominios específicos para permitir HTTP -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">https://wikimedia.org</domain> <!-- Cambia 'yourdomain.com' al dominio que necesitas permitir HTTP -->
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GuateCinema</string>
+    <string name="facebook_app_id">[499075572986635]</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="poster">Poster</string>
+        <string name="ver_usuarios">Ver Usuarios</string>
+        <string name="eliminar_usuarios">Eliminar Usuarios</string>
+        <string name="lista_usuarios">Lista de usuarios registrados</string>
+        <string name="panel_administrador">Panel del Administrador</string>
+        <string name="gestion_usuarios">Gestión de Usuarios</string>
+        <string name="gestion_cines">Gestión de Cines</string>
+        <string name="agregar_cine">Agregar Cine</string>
+        <string name="editar_cine">Editar Cine</string>
+        <string name="eliminar_cine">Eliminar Cine</string>
+        <string name="usuarios_registrados">Usuarios Registrados</string>
+        <string name="home">Home</string>
+        <string name="profile">Profile</string>
+        <string name="settings">Settings</string>
+
+</resources>

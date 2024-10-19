@@ -1,0 +1,293 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdministradorActivity"
+    android:background="@color/colorBackground"> <!-- Usamos el color de fondo según el tema activo -->
+
+    <!-- AppBar con título y menú -->
+<com.google.android.material.appbar.AppBarLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:title="Panel Administrador"
+    android:textColor="@color/colorTextPrimary" />
+</com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Contenido con ScrollView -->
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="24dp"
+android:padding="16dp"
+android:scrollbars="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Sección de Gestión de Usuarios -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/colorCardBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título desplegable -->
+            <TextView
+                android:id="@+id/titleGestionUsuarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestión de Usuarios"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/colorTextPrimary"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Opciones que se expanden/colapsan -->
+            <LinearLayout
+                android:id="@+id/expandableGestionUsuarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnVerUsuarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Usuarios"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnEditarRoles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editar Roles"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnEliminarUsuarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar Usuarios"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de Gestión de Cines -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/colorCardBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título desplegable -->
+            <TextView
+                android:id="@+id/titleGestionCines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestión de Cines"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/colorTextPrimary"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/expandableGestionCines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAgregarCine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar Cine"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnEditarCine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editar Cine"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnEliminarCine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar Cine"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de Gestión de Películas -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/colorCardBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título desplegable -->
+            <TextView
+                android:id="@+id/titleGestionPeliculas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestión de Películas"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/colorTextPrimary"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Opciones que se expanden/colapsan -->
+            <LinearLayout
+                android:id="@+id/expandableGestionPeliculas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnAgregarPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar Película"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnEditarPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editar Película"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnEliminarPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar Película"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de Reportes -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/colorCardBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título desplegable -->
+            <TextView
+                android:id="@+id/titleGestionReportes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reportes y Estadísticas"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/colorTextPrimary"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Opciones que se expanden/colapsan -->
+            <LinearLayout
+                android:id="@+id/expandableGestionReportes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnVerReportes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Reportes"
+                    style="?attr/buttonStyle" />
+
+                <Button
+                    android:id="@+id/btnVerEstadisticas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Estadísticas"
+                    android:layout_marginTop="8dp"
+                    style="?attr/buttonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón de Cerrar Sesión -->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:layout_marginTop="16dp"
+        style="?attr/buttonStyle" />
+</LinearLayout>
+</ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
